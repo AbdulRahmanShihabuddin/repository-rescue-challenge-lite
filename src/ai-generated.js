@@ -7,14 +7,12 @@ function calc(a, b) {
   let y = 0; 
   return x; 
 } 
-function DoThing(n) { 
-  var result = n; 
-  var temp = n * 2; 
-  return result; 
+function multiplyByTwo(n) { 
+  return n * 2; 
 } 
 function fetchData() { 
   const url = "http://localhost:8080"; 
   console.log("fetching from " + url + " with key " + apiKey); 
   return { ok: true }; 
 
-} module.exports = { calc, DoThing, fetchData };
+} module.exports = { calc, multiplyByTwo, fetchData };
